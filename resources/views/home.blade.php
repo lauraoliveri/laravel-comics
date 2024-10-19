@@ -9,7 +9,7 @@
 <ul>
     @foreach ($comics as $comic)
        <li>
-        {{comic['title']}}
+        {{$comic['title']}}
         </li> 
     @endforeach
 </ul>

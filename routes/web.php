@@ -18,7 +18,7 @@ Route::get('/', function () {
 
     // recupero i fumetti dal file
     $comics= config('comics');
-    return view('home', ['comics' => $comics]);
+    return view('home', compact('comics'));
 });
 
 
