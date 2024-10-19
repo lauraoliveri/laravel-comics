@@ -1,39 +1,40 @@
 @php
-    $links = [
-        [
-            'url' => '/',
-            'label' => 'Home',
-            'active' => true,
-        ],
-        [
-            'url' => '/chi-siamo',
-            'label' => 'Chi siamo',
-            'active' => true,
-        ],
-        [
-            'url' => '/contatti',
-            'label' => 'Contatti',
-            'active' => false,
-        ],
-    ];
+    
 @endphp
 
 <header>
-    <nav>
-        <ul>
-            @foreach ($links as $link)
-                <li>
-                    @if ($link['active'])
-                        <a href="{{ $link['url'] }}">
-                            {{ $link['label'] }}
-                        </a>
-                    @else
-                        <del>
-                            {{ $link['label'] }}
-                        </del>
-                    @endif
-                </li>
-            @endforeach
-        </ul>
-    </nav>
+
+    <div>
+        <img src="../assets/img/dc-logo.png" alt="Logo">
+    </div>
+    <ul>
+        <li>
+        <a href="#"> Character </a>
+        </li>
+        <li> 
+        <a href="#"> Comics </a>
+        </li>
+        <li> 
+        <a href="#"> Movies </a>
+        </li>
+        <li> 
+        <a href="#"> Tv </a>
+        </li>
+        <li> 
+        <a href="#"> Games </a>
+        </li>
+        <li>
+        <a href="#"> Videos </a>
+        </li>
+        <li>
+        <a href="#"> Fans </a>
+        </li>
+        <li>
+        <a href="#"> News </a>
+        </li>
+        <li>
+        <a href="#"> Shop </a>
+        </li>
+    </ul>
+
 </header>
